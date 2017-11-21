@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Jeena Yin / 尹琪娅 / p1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="computer, computer science, sound design, interaction, portfolio, art, cmu, jeena, yin, jeena yin, scholarship, music, music technology, bcsa" />
+<meta http-equiv="author" content="Jeena Yin" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="../../css/w3.css">
+<link rel="stylesheet" href="../../css/style.css">
+
+<!-- fonts & attributes -->
+<link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Codystar|Flamenco" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/yin.png">
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+<script src="../../scripts/typed.js" type="text/javascript"></script>
+<script src="../../scripts/main.js"></script>
+
+<style>
+h1,h2,h3,h4,h5 {font-family: "Flamenco", sans-serif}
+body {font-family: "Quicksand", sans-serif}
+
+body {font-size:19px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-padding" style="z-index:3;width:230px;font-weight:bold;" id="mySidebar"><br>
+  <!-- floating back button -->
+  <div class="float">
+    <button class="onlyBigScreens w3-button w3-round-tiny w3-hover-red w3-text-red" onclick="goBack()">◀︎</button>
+  </div>
+  <div class="w3-container w3-round-small w3-hover-red w3-hover-text-white w3-text-red">
+    <a href="../../index.html" onclick="w3_close()"><h3 class="w3-padding-64"><b>Jeena<br>Yin</b></h3></a>
+  </div>
+  <div class="w3-bar-block">
+    <button onclick="window.location.href='../../index.html#showcase';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-yellow sideBarItem">My Story</button>
+    <button onclick="window.location.href='../../index.html#showcase';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-orange sideBarItem">Showcase</button>
+    <button onclick="window.location.href='../../index.html#experiences';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-aqua sideBarItem">Experiences</button>
+    <button onclick="window.location.href='../../index.html#coursework';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-green sideBarItem">Coursework</button>
+    <button onclick="window.location.href='../../static/Resume.pdf';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-pink sideBarItem">Résumé</button>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-padding">
+  <button class="w3-bar-item w3-medium w3-button w3-hover-red w3-text-red w3-round-small w3-margin-right" onclick="goBack()">◀︎</button>
+  <button onclick="w3_open()" class="w3-button w3-medium w3-round-small w3-red w3-margin-right w3-hover-white">☰</button>
+  <button onclick="window.location.href='../../index.html'" class="w3-bar-item w3-medium w3-button w3-hover-text-red w3-hover-none" style="font-family:'Flamenco',sans-serif;">Jeena Yin</button>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:280px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px">
+    <h1 class="w3-jumbo">Automated Lighting System</h1>
+  </div>
+
+  <div class="videoWrapper" style="margin-left:45px;margin-right:55px;margin-top:20px">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CrN7DRvI9hc?rel=0&amp;showinfo=0"
+      frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <!-- About Project -->
+  <div class="w3-container" style="margin-top:20px">
+    <p>I built a lighting system using max msp to analyze audio input through microphone in realtime, and visualize the
+    audio information through a group of 30 LED lights.</p>
+    <p>The amplitude of the input directly triggers the saturation of the colors. The ratio of high and low frequencies
+      in the audio controls the RGB value, such that the more lower frequency there is, the more pinkish the color is.</p>
+      <p>The delay effect is made by grouping the 30 lights into 3 subgroups, so that the changes of color happen first
+        at the inner lights, and then propogate outwards.</p>
+        <p>This lighting system is made for a piece I composed for the <a class="w3-text-pink w3-hover-text-yellow" href="http://www.explodedensemble.org">CMU Exploded Ensemble</a>.</p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Copyright Container big screen-->
+<h4 class="onlyBigScreens w3-container w3-padding-small w3-center w3-text-red" style="margin-left:230px;margin-top:100px">
+  Site built by Jeena Yin with ❤︎
+</h4>
+
+<!-- Copyright Container small screen-->
+<h4 class="onlySmallScreens w3-container w3-padding-small w3-center w3-text-red" style="margin-top:100px">
+  Site built by Jeena Yin with ❤︎
+</h4>
+
+</body>
+</html>

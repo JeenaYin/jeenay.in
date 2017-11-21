@@ -1,0 +1,70 @@
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.float {
+  position: fixed;
+  left: 225px;
+  top: 20px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  z-index: 98;
+}
+
+canvas {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.w {
+	width: 80px;
+	height: 80px;
+}
+
+.img {
+	width: 28px;
+	height: 28px;
+}
+
+.sideBarItem {
+	font-weight: bold;
+	font-size:15px
+}
+
+.imgDes span {
+   color: white;
+   font: 24px/45px Quicksand, Sans-Serif;
+   letter-spacing: -1px;
+   padding: 10px;
+}
+
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+.imgDes {
+   position: absolute;
+   top: 30px;
+   left: 0;
+   width: 100%;
+}
+
+.imgDes span.spacer {
+   padding:0 5px;
+}
